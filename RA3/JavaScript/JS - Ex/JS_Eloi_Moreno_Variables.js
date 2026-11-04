@@ -5,3 +5,12 @@ console.log("Hola, em dic Eloi")
 console.log("Tinc 17 (casi 18) anys")
 console.log("Vaig néixer el 10/12/2008")
 
+// 2.- Declara 3 variables, cadascuna amb un tipus de dades diferent i mostra el valor per consola.
+
+var name = "Eloi"
+let age = 17
+const happy = true
+
+console.log("Hola el meu nom es " + name)
+console.log("Tinc " + age + " anys")
+console.log("Soc feliç? " + happy)
