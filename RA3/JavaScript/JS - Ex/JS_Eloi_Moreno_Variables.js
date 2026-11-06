@@ -32,3 +32,4 @@
 //gravetat = gravetat + 5;
 //console.log(gravetat)
 
+
