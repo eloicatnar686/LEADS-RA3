@@ -16,6 +16,11 @@
 //console.log(hipo.toFixed(1))
 
 // 8.- Divideix un enter entre un String. Què retorna?
-let enter = 67
-let num_str = "6"
-console.log(enter / num_str)
+//let enter = 67
+//let num_str = "6"
+//console.log(enter / num_str)
+
+// 9.- Donat un String amb el teu nom i cognoms, extreu el teu primer cognom, i mostra’l per pantalla indicant el número de caràcters que té.
+let nom = "Eloi Moreno Olivella"
+console.log(nom.slice(5,11))
+console.log(nom.length)
