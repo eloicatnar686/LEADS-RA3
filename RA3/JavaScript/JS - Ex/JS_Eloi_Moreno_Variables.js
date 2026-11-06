@@ -27,7 +27,8 @@
 
 // 5.- Declara una constant amb un valor i mostra’l per consola. Modifica el seu valor a un altre tipus de dades. Et deixa? Perquè?
 
-const gravetat = 9.8;
-console.log(gravetat)
-gravetat = gravetat + 5;
-console.log(gravetat)
+//const gravetat = 9.8;
+//console.log(gravetat)
+//gravetat = gravetat + 5;
+//console.log(gravetat)
+
