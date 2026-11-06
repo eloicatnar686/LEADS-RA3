@@ -8,9 +8,14 @@
 //console.log("Divisió " + (numero / Number(BigInt)).toFixed(1))
 
 // 7.- Calcula la hipotenusa d’un triangle on les longituds dels catets sigui de 4.
-let cat1 = 4
-let cat2 = 4
-let catsum =  (cat1 * cat1) + (cat2 * cat2)
-let hipo = Math.sqrt(catsum)
+//let cat1 = 4
+//let cat2 = 4
+//let catsum =  (cat1 * cat1) + (cat2 * cat2)
+//let hipo = Math.sqrt(catsum)
 
-console.log(hipo.toFixed(1))
+//console.log(hipo.toFixed(1))
+
+// 8.- Divideix un enter entre un String. Què retorna?
+let enter = 67
+let num_str = "6"
+console.log(enter / num_str)
