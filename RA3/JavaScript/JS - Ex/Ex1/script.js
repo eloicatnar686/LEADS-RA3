@@ -31,6 +31,12 @@
 
 // 11.- Declara una variable undefined i un null. Què passa si els sumes?
 
-let undefined1 = undefined;
-let null1 = null;
-console.log(undefined1+null1)
+// let undefined1 = undefined;
+// let null1 = null;
+// console.log(undefined1+null1)
+
+// 12.- Realitza una coerció explícita i implícita d’un booleà a String.
+
+let bool1 = true;
+console.log(String(bool1))
+console.log(bool1)
