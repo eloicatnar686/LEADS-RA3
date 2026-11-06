@@ -21,6 +21,10 @@
 //console.log(enter / num_str)
 
 // 9.- Donat un String amb el teu nom i cognoms, extreu el teu primer cognom, i mostra’l per pantalla indicant el número de caràcters que té.
+// let nom = "Eloi Moreno Olivella"
+// console.log(nom.slice(5,11))
+// console.log(nom.length)
+
+// 10.- Donat un String amb el teu nom i cognoms, esborra el caràcter de la posició 6 i mostra el resultat per pantalla.
 let nom = "Eloi Moreno Olivella"
-console.log(nom.slice(5,11))
-console.log(nom.length)
+console.log(nom.slice(0,6) + nom.slice(7))
