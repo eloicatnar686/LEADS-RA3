@@ -37,6 +37,12 @@
 
 // 12.- Realitza una coerció explícita i implícita d’un booleà a String.
 
-let bool1 = true;
-console.log(String(bool1))
-console.log(bool1)
+// let bool1 = true;
+// console.log(String(bool1))
+// console.log(bool1)
+
+// 13.- Realitza una coerció explícita i implícita d’un String a booleà.
+
+let str1 = "lol"
+console.log(Boolean(str1))
+console.log(str1 === 'true')
