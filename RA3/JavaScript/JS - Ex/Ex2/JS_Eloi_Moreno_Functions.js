@@ -28,9 +28,8 @@ function Declarar(){
 console.log("///////////////////////////////////////////////////////")
 
 // 5.- Passa’t un String, retorni el número de vocals que té
-let paraula = "Hola mundo"
 let contador = 0;
-function Vocals(){
+function Vocals(paraula){
     for (let i = 0; i < paraula.length; i++){
         if (paraula.charAt(i) === "a" || paraula.charAt(i) === "e" || paraula.charAt(i) === "i" || paraula.charAt(i) === "o" || paraula.charAt(i) === "u"){
             contador++;
@@ -39,8 +38,7 @@ function Vocals(){
     return contador;
 
 }
-Vocals()
-console.log("Numero de vocals = " + contador)
+console.log("Numero de vocals = " + Vocals("Hola mundo"))
 console.log("///////////////////////////////////////////////////////")
 
 // 6.- Passa 3 enters com a paràmetres (el tercer ha de tenir un valor per defecte) i retorni la suma dels tres.
@@ -61,3 +59,17 @@ function CallBack(num1, num2){
 console.log(CallBack(1,4))
 
 console.log("///////////////////////////////////////////////////////")
+
+// 8.- Passa’t dos enters, retornar true si un d’ells és igual a 30 o si la seva suma és igual a 30.
+
+let boolean = false;
+
+function SumaOIgual(num1, num2){
+    if(num1 + num2 === 30 || num1 || num2 === 30){
+        return boolean = true
+    }
+}
+
+console.log("La suma dona 30 o algun numero es 30? " + SumaOIgual(30,2))
+console.log("///////////////////////////////////////////////////////")
+
