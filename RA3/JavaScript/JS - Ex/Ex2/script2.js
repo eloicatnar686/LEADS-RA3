@@ -17,3 +17,9 @@ function DataActual(){
 }
 DataActual()
 
+// 4.- Declara una variable dins d’una funció i mostra el seu valor fora d’aquesta. Què passa? Perquè?
+function Declarar(){
+    let variable = 0;
+}
+console.log(variable)
+

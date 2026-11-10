@@ -2,8 +2,8 @@
 // consola.
 
 //console.log("Hola, em dic Eloi")
-//console.log("Tinc 17 (casi 18) anys")
-//console.log("Vaig néixer el 10/12/2008")
+//console.warn("Tinc 17 (casi 18) anys")
+//console.error("Vaig néixer el 10/12/2008")
 
 // 2. Declara 3 variables, cadascuna amb un tipus de dades diferent i mostra el valor per consola.
 
