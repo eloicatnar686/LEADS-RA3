@@ -13,11 +13,11 @@ TipusVar("Hello")
 console.log("///////////////////////////////////////////////////////")
 
 // 3.- Mostri la data actual
-function DataActual(){
-    const date = new Date();
+
+function DataActual(date){
     console.log(date)
 }
-DataActual()
+DataActual("10/11/2026")
 console.log("///////////////////////////////////////////////////////")
 
 // 4.- Declara una variable dins d’una funció i mostra el seu valor fora d’aquesta. Què passa? Perquè?
@@ -55,7 +55,9 @@ console.log("///////////////////////////////////////////////////////")
 // 7.- Ha de cridar la funció de l’exercici 3 i retornar el resultat de la funció de l’exercici 6.
 
 function CallBack(num1, num2){
-    DataActual()
+    DataActual("10/11/2026")
     return suma(num1,num2)
 }
 console.log(CallBack(1,4))
+
+console.log("///////////////////////////////////////////////////////")
