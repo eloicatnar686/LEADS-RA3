@@ -51,3 +51,11 @@ function suma(par1,par2,par3 = 2){
 console.log("Suma = " + suma(1,3))
 
 console.log("///////////////////////////////////////////////////////")
+
+// 7.- Ha de cridar la funció de l’exercici 3 i retornar el resultat de la funció de l’exercici 6.
+
+function CallBack(num1, num2){
+    DataActual()
+    return suma(num1,num2)
+}
+console.log(CallBack(1,4))
