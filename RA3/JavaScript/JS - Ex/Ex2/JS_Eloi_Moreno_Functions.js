@@ -3,12 +3,14 @@ function MostraNom (nom, cognom){
     console.log("Hola " + nom + " " + cognom)
 }
 MostraNom("Eloi", "Moreno")
+console.log("///////////////////////////////////////////////////////")
 
 // 2.- Passa un valor per paràmetre i mostri de quin tipus és.
 function TipusVar(variable){
     console.log(typeof variable)
 }
 TipusVar("Hello")
+console.log("///////////////////////////////////////////////////////")
 
 // 3.- Mostri la data actual
 function DataActual(){
@@ -16,12 +18,14 @@ function DataActual(){
     console.log(date)
 }
 DataActual()
+console.log("///////////////////////////////////////////////////////")
 
 // 4.- Declara una variable dins d’una funció i mostra el seu valor fora d’aquesta. Què passa? Perquè?
 function Declarar(){
     let variable = 0;
 }
 //console.log(variable)
+console.log("///////////////////////////////////////////////////////")
 
 // 5.- Passa’t un String, retorni el número de vocals que té
 let paraula = "Hola mundo"
@@ -37,4 +41,13 @@ function Vocals(){
 }
 Vocals()
 console.log("Numero de vocals = " + contador)
+console.log("///////////////////////////////////////////////////////")
 
+// 6.- Passa 3 enters com a paràmetres (el tercer ha de tenir un valor per defecte) i retorni la suma dels tres.
+function suma(par1,par2,par3 = 2){
+    return par1+par2+par3
+}
+
+console.log("Suma = " + suma(1,3))
+
+console.log("///////////////////////////////////////////////////////")
