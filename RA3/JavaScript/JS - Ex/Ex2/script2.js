@@ -9,3 +9,11 @@ function TipusVar(variable){
     console.log(typeof variable)
 }
 TipusVar("Hello")
+
+// 3.- Mostri la data actual
+function DataActual(){
+    const date = new Date();
+    console.log(date)
+}
+DataActual()
+
