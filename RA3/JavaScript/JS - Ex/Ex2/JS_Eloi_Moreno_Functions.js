@@ -38,7 +38,7 @@ function Vocals(paraula){
     return contador;
 
 }
-console.log("Numero de vocals = " + Vocals("Hola mundo"))
+console.log("Numero de vocals = " + Vocals("Cocacola es una compañia"))
 console.log("///////////////////////////////////////////////////////")
 
 // 6.- Passa 3 enters com a paràmetres (el tercer ha de tenir un valor per defecte) i retorni la suma dels tres.
@@ -65,26 +65,27 @@ console.log("///////////////////////////////////////////////////////")
 let boolean = false;
 
 function SumaOIgual(num1, num2){
-    if(num1 + num2 === 30 || num1 || num2 === 30){
-        return boolean = true
+    if(num1 + num2 === 30 || num1 === 30 || num2 === 30){
+        boolean = true
     }
+    return boolean
 }
 
-console.log("La suma dona 30 o algun numero es 30? " + SumaOIgual(30,2))
+console.log("La suma dona 30 o algun numero es 30? " + SumaOIgual(2,7))
 console.log("///////////////////////////////////////////////////////")
 
 // 9.- Repeteix l’exercici anterior però com a funció anònima.
 
 let boolean2 = false;
 
-boolean2 = function (num1, num2){
-    if(num1 + num2 === 30 || num1 || num2 === 30){
-        boolean = true
+funko2 = function (num1, num2){
+    if(num1 + num2 === 30 || num1 === 30 || num2 === 30){
+        boolean2 = true
     }
+    return boolean2;
 }
 
-SumaOIgual(32,2)
-console.log("La suma dona 30 o algun numero es 30? " + boolean)
+console.log("La suma dona 30 o algun numero es 30? " + funko2(28,2))
 console.log("///////////////////////////////////////////////////////")
 
 
