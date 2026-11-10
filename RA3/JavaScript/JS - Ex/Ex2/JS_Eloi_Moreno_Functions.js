@@ -21,5 +21,20 @@ DataActual()
 function Declarar(){
     let variable = 0;
 }
-console.log(variable)
+//console.log(variable)
+
+// 5.- Passa’t un String, retorni el número de vocals que té
+let paraula = "Hola mundo"
+let contador = 0;
+function Vocals(){
+    for (let i = 0; i < paraula.length; i++){
+        if (paraula.charAt(i) === "a" || paraula.charAt(i) === "e" || paraula.charAt(i) === "i" || paraula.charAt(i) === "o" || paraula.charAt(i) === "u"){
+            contador++;
+        }
+    }
+    return contador;
+
+}
+Vocals()
+console.log("Numero de vocals = " + contador)
 
