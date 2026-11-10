@@ -19,6 +19,9 @@
 
 // console.log(var3) <-- ERROR: VAR must be initialized
 // let var3 = "Test"
+// console.log(m) <-- Undefined
+// var m = "Test
+
 
 // 4.- Declara una variable amb un valor i mostra’l per consola. Modifica el seu valor a un altre tipus de dades. Et deixa? Perquè?
 
