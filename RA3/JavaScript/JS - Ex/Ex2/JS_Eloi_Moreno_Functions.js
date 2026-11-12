@@ -138,7 +138,7 @@ let posicio = (frase,paraula) => {
 
 let dividir = (frase,paraula) => {
     let numCaracters = posicio(frase, paraula);
-    const paraula3 = (frase.length - numCaracters) + paraula.length; // Torna la posicio per on queda la array despres de dividir la frase
+    let paraula3 = (frase.length - numCaracters) + paraula.length; // Torna la posicio per on queda la array despres de dividir la frase
     return frase.slice(paraula3);
 }
 
