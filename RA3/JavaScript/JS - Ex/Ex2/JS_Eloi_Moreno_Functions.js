@@ -126,3 +126,23 @@ let noNull = (a,b) => {
 console.log(noNull(12, null)) // 12
 console.log(noNull(null,2)) // 2
 
+console.log("///////////////////////////////////////////////////////")
+
+
+// 14
+
+let posicio = (frase,paraula) => {
+    let index = frase.indexOf(paraula);
+    return frase.length - index;
+}
+
+let dividir = (frase,paraula) => {
+    let numCaracters = posicio(frase, paraula);
+    // Calculem on comença el text a partir d'on s'acaba la paraula
+    const paraula3 = (frase.length - numCaracters) + paraula.length;
+    return frase.slice(paraula3);
+}
+
+console.log(posicio("Hola com estas", "com")); // 9
+console.log(dividir("Hola com estas", "com")); // estas
+
