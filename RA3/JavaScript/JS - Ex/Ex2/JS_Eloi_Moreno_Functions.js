@@ -89,3 +89,14 @@ console.log("La suma dona 30 o algun numero es 30? " + funko2(28,2))
 console.log("///////////////////////////////////////////////////////")
 
 
+// Funcions fletxa
+
+// 10.- Passa’t dos valors, retorni cert o falç si el valor i el tipus de dades són el mateix.
+
+let cert0fals = (a,b) => a === b;
+
+console.log(cert0fals(3,3)) // true
+console.log(cert0fals("a",4)) // false
+
+
+
