@@ -98,5 +98,11 @@ let cert0fals = (a,b) => a === b;
 console.log(cert0fals(3,3)) // true
 console.log(cert0fals("a",4)) // false
 
+console.log("///////////////////////////////////////////////////////")
+
+// 11.- Passa’t un valor, realitzi l’arrel quadrada i retorni el valor amb dos decimals.
+
+let arrel = (a) => {return Math.sqrt(a)}
+console.log(Arrel(2).toFixed(2))
 
 
