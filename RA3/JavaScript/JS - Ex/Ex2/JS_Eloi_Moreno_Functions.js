@@ -103,6 +103,12 @@ console.log("///////////////////////////////////////////////////////")
 // 11.- Passa’t un valor, realitzi l’arrel quadrada i retorni el valor amb dos decimals.
 
 let arrel = (a) => {return Math.sqrt(a)}
-console.log(Arrel(2).toFixed(2))
+console.log(arrel(2).toFixed(2))
 
+console.log("///////////////////////////////////////////////////////")
+
+// 12.- Passa’t un String, el retorni en minúscules.
+
+let str123 = (a) => {return a.toLowerCase()}
+console.log(str123("HOLA MON"))
 
