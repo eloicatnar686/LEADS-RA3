@@ -112,3 +112,17 @@ console.log("///////////////////////////////////////////////////////")
 let str123 = (a) => {return a.toLowerCase()}
 console.log(str123("HOLA MON"))
 
+console.log("///////////////////////////////////////////////////////")
+
+// 13.- Passa’t dos valors, retorni el que no és null.
+
+let noNull = (a,b) => {
+    if (a !== null) {
+        return a;
+    }
+    return b;
+}
+
+console.log(noNull(12, null)) // 12
+console.log(noNull(null,2)) // 2
+
