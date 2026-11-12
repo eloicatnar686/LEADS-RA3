@@ -145,4 +145,10 @@ let dividir = (frase,paraula) => {
 
 console.log(posicio("Hola com estas", "com")); // 9
 console.log(dividir("Hola com estas", "com")); // estas
+console.log("///////////////////////////////////////////////////////")
 
+
+// 15.- Explica què fa la següent funció i fes-ne un cas de prova:
+
+let sumes = (x) => x + x + x
+console.log(sumes(2)) // 6
