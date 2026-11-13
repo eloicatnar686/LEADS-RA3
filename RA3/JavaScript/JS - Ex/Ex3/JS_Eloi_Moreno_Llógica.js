@@ -20,3 +20,23 @@ let y = 60;
 x = x > 10 && x < 50 ? console.log("Dins del rang") : console.log("No està dins del rang")
 x = y > 10 && y < 50 ? console.log("Dins del rang") : console.log("No està dins del rang")
 
+
+function SaberNota (x) {
+    if (x < 4.99){
+        return "Suspès";
+    }
+    else if (x >= 5 && x < 5.99){
+        return "Suficient"
+    }
+    else if (x >= 6 && x < 6.99){
+        return "Bé"
+    }
+    else if (x >= 7 && x < 8.99){
+        return "Notable"
+    }
+    else if (x >= 9 && x <= 10){
+        return "Excelent"
+    }
+}
+
+console.log(SaberNota(6.4562))
