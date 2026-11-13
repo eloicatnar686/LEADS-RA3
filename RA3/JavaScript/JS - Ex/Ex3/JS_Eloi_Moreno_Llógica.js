@@ -93,3 +93,17 @@ function max_n (x){
 }
 
 max_n(15)
+
+// 6.- Donat un String (x), sumar els caràcters que siguin números.
+
+function SumaString (a) {
+        let suma = 0;
+        for (let i = 0; i < a.length; i++){
+            if (!isNaN(a[i])){
+                suma += Number(a[i])
+            }
+        }
+    console.log(suma)
+}
+
+SumaString("Hola car2aco2la") // 4
