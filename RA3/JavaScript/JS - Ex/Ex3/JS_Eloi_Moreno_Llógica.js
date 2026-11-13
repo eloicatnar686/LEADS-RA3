@@ -72,3 +72,24 @@ function missatge (position) {
     }
 
     console.log(SaberNota(6.4562))
+
+// 5.- Donat un enter (x), troba el màxim número n tal que 1+2+3+...+n <= x
+// Exemple: si x=15, n seria 5 ( 1 + 2 +3 +4 +5 = 15)
+
+
+function max_n (x){
+    let total = 0;
+    let n = 0;
+
+    for (let i = 0; i <= x; i++){
+        if (total + i > x){
+            break
+        }
+        total += i;
+        n = i
+    }
+    console.log("X = " + x + ", el numero maxim de numeros = " + n + ", suma total = " + total)
+    return x;
+}
+
+max_n(15)
