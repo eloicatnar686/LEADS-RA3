@@ -107,3 +107,25 @@ function SumaString (a) {
 }
 
 SumaString("Hola car2aco2la") // 4
+
+
+// 7.- Donat 3 enters, ordena de major a menor
+
+function OrdenarMajor(enter1, enter2, enter3){
+    console.log("Enters desordenats: " + enter1, enter2, enter3)
+    let enters = [enter1, enter2, enter3]
+    let aux = 0;
+    for (let i = 0; i < enters.length; i++){
+        for (let j = 0; j < enters.length - 1 - i; j++){
+            if (enters[j] < enters[j+1]){
+                aux = enters[j]
+                enters[j] = enters[j+1];
+                enters[j+1] = aux
+            }
+        }
+    }
+    console.log("Enters ordenats de major a menor " + enters)
+    return enters
+}
+
+OrdenarMajor(1,2,5)
