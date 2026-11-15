@@ -185,3 +185,19 @@ function arboldenavidad() {
 
 
 arboldenavidad()
+
+// 10.- Utilitza un do..while per sumar els múltiples de 3 i 5 fins al número 1000.
+
+function NoSeQuePoner () {
+    let suma = 0;
+    let i = 0
+    do {
+        if (i % 3 === 0 || i % 5 === 0){
+            suma = suma + i
+        }
+        i++
+    } while (i <= 1000)
+    console.log(suma)
+}
+
+NoSeQuePoner()
