@@ -171,7 +171,7 @@ ParellsSenarsArray(10)
 // * * * * *
 
 function arboldenavidad() {
-    var num = "";
+    let num = "";
 
     for (var i = 1; i < 6; i++) {
         if (i === 1) {
