@@ -161,3 +161,27 @@ function ParellsSenarsArray (x){
 
 ParellsSenars(10)
 ParellsSenarsArray(10)
+
+
+// 9.- 9.- Realitza una funció que, utilitzant bucles, mostri per pantalla el següent patró:
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+
+function arboldenavidad() {
+    var num = "";
+
+    for (var i = 1; i < 6; i++) {
+        if (i === 1) {
+            num = "*";
+        } else {
+            num = num + " *";
+        }
+        console.log(num);
+    }
+}
+
+
+arboldenavidad()
