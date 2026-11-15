@@ -129,3 +129,18 @@ function OrdenarMajor(enter1, enter2, enter3){
 }
 
 OrdenarMajor(1,2,5)
+
+// 8.- Donat un enter (x), fes un bucle que digui des del 0 a x, quins són parells i quins senars.
+
+function ParellsSenars (x){
+        for (let i = x; x > 0; x--){
+            if (x % 2 === 0){
+                console.log("Parell: " + x)
+            }
+            else {
+                console.log("Senar: " + x)
+            }
+        }
+}
+
+ParellsSenars(10)
