@@ -217,3 +217,18 @@ function arboldenavidad2() {
 }
 
 arboldenavidad2()
+
+// 12.- Donat un enter de longitud par, intercanvia els dígits adjacents. Exemple: 123456 → 214365
+
+function intercanviarpos(x) {
+    let digits = String(x);
+    let resultat = "";
+
+    for (let i = 0; i < digits.length; i += 2) {
+        resultat += digits[i + 1] + digits[i];
+    }
+
+    console.log(Number(resultat));
+}
+
+intercanviarpos(123456);
