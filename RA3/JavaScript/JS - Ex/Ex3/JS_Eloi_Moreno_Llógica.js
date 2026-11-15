@@ -173,7 +173,7 @@ ParellsSenarsArray(10)
 function arboldenavidad() {
     let num = "";
 
-    for (var i = 1; i < 6; i++) {
+    for (let i = 1; i < 6; i++) {
         if (i === 1) {
             num = "*";
         } else {
