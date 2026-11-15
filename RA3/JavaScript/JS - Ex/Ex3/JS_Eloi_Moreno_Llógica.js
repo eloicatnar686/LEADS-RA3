@@ -143,4 +143,21 @@ function ParellsSenars (x){
         }
 }
 
+function ParellsSenarsArray (x){
+    let parells = []
+    let senars = []
+    for (let i = x; x > 0; x--){
+        if (x % 2 === 0){
+            parells.push(x)
+        }
+        else {
+            senars.push(x)
+        }
+    }
+    console.log("Parells " + parells)
+    console.log("Senars " + senars)
+}
+
+
 ParellsSenars(10)
+ParellsSenarsArray(10)
