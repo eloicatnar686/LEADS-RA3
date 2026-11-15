@@ -183,7 +183,6 @@ function arboldenavidad() {
     }
 }
 
-
 arboldenavidad()
 
 // 10.- Utilitza un do..while per sumar els múltiples de 3 i 5 fins al número 1000.
@@ -201,3 +200,20 @@ function NoSeQuePoner () {
 }
 
 NoSeQuePoner()
+
+// 11.- Modifica l’exercici 9 perquè només mostri les línies amb estrelles imparelles. Utilitza la sentència continue.
+
+function arboldenavidad2() {
+    let num = "";
+
+    for (let fila = 1; fila < 6; fila++) {
+        num = num + "* ";
+
+        if (fila % 2 !== 0) { // Fila imparell (saltar)
+            continue
+        }
+            console.log(num);
+    }
+}
+
+arboldenavidad2()
