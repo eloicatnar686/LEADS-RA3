@@ -251,12 +251,14 @@ console.log("###################################################")
 function intercanviarpos(x) {
     let digits = String(x);
     let resultat = "";
-
-    for (let i = 0; i < digits.length; i += 2) {
-        resultat += digits[i + 1] + digits[i];
+    if (x % 2 === 0){
+        for (let i = 0; i < digits.length; i += 2) {
+            resultat += digits[i + 1] + digits[i];
+        }
+        console.log(Number(resultat));
+    } else {
+        console.log("Imparell!")
     }
-
-    console.log(Number(resultat));
 }
 
 intercanviarpos(123456);
