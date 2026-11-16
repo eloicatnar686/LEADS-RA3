@@ -22,6 +22,7 @@ function SaberCase (x){
     return position;
 }
 
+
 function missatge (position) {
     SaberCase()
     switch (position) {
@@ -46,6 +47,8 @@ function missatge (position) {
 
     missatge(SaberCase(9)) // Multiple de 3
     missatge(SaberCase(21))// Multiple de 7
+
+console.log("###################################################")
 
 // 2.- Donats dos enters (x, y), dir quins d’ells estan en el rang de 10 a 50 inclosos. Utilitza un operador ternari.
 
@@ -73,6 +76,9 @@ function missatge (position) {
 
     console.log(SaberNota(6.4562))
 
+console.log("###################################################")
+
+
 // 5.- Donat un enter (x), troba el màxim número n tal que 1+2+3+...+n <= x
 // Exemple: si x=15, n seria 5 ( 1 + 2 +3 +4 +5 = 15)
 
@@ -94,6 +100,9 @@ function max_n (x){
 
 max_n(15)
 
+console.log("###################################################")
+
+
 // 6.- Donat un String (x), sumar els caràcters que siguin números.
 
 function SumaString (a) {
@@ -107,6 +116,9 @@ function SumaString (a) {
 }
 
 SumaString("Hola car2aco2la") // 4
+
+console.log("###################################################")
+
 
 
 // 7.- Donat 3 enters, ordena de major a menor
@@ -129,6 +141,9 @@ function OrdenarMajor(enter1, enter2, enter3){
 }
 
 OrdenarMajor(1,2,5)
+
+console.log("###################################################")
+
 
 // 8.- Donat un enter (x), fes un bucle que digui des del 0 a x, quins són parells i quins senars.
 
@@ -162,8 +177,10 @@ function ParellsSenarsArray (x){
 ParellsSenars(10)
 ParellsSenarsArray(10)
 
+console.log("###################################################")
 
-// 9.- 9.- Realitza una funció que, utilitzant bucles, mostri per pantalla el següent patró:
+
+// 9.- Realitza una funció que, utilitzant bucles, mostri per pantalla el següent patró:
 // *
 // * *
 // * * *
@@ -185,6 +202,8 @@ function arboldenavidad() {
 
 arboldenavidad()
 
+console.log("###################################################")
+
 // 10.- Utilitza un do..while per sumar els múltiples de 3 i 5 fins al número 1000.
 
 function NoSeQuePoner () {
@@ -200,6 +219,9 @@ function NoSeQuePoner () {
 }
 
 NoSeQuePoner()
+
+console.log("###################################################")
+
 
 // 11.- Modifica l’exercici 9 perquè només mostri les línies amb estrelles imparelles. Utilitza la sentència continue.
 
@@ -221,6 +243,9 @@ function arboldenavidad2() {
 
 arboldenavidad2()
 
+console.log("###################################################")
+
+
 // 12.- Donat un enter de longitud par, intercanvia els dígits adjacents. Exemple: 123456 → 214365
 
 function intercanviarpos(x) {
@@ -235,3 +260,5 @@ function intercanviarpos(x) {
 }
 
 intercanviarpos(123456);
+
+console.log("###################################################")
