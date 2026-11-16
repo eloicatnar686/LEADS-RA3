@@ -207,12 +207,15 @@ function arboldenavidad2() {
     let num = "";
 
     for (let fila = 1; fila < 6; fila++) {
-        num = num + "* ";
-
-        if (fila % 2 !== 0) { // Fila imparell (saltar)
+        if (fila % 2 === 0){
+            num = num + "* ";
             continue
         }
-            console.log(num);
+        num = num + "* ";
+
+
+        console.log(num)
+
     }
 }
 
