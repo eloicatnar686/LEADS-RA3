@@ -27,4 +27,10 @@ console.log("Function Sort: ")
 numeros2 = numeros2.sort(function (a,b){return a - b})
 console.log(numeros2)
 
+console.log("####################################################")
+// 2.- Utilitza l’operador de propagació per crear un altre array usant els valors de l’exercici anterior
 
+let numeros3 = [...numeros]
+console.log(numeros3)
+
+console.log("####################################################")
