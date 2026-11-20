@@ -34,3 +34,21 @@ let numeros3 = [...numeros]
 console.log(numeros3)
 
 console.log("####################################################")
+
+// 3.- Fusiona dos arrays i esborren els valors duplicats (no utilitzis el Set).
+
+let fusion = [1,3,2,7,8] // Duplicates = 1,2,
+let fusion2 = [9,5,4,2,1]
+let total_fusion = [...fusion, ...fusion2]
+console.log(DeleteDuplicates(total_fusion))
+// Comparamos array 1 con array 2 para encontrar numeros duplicados, guardamos las posiciones duplicadas y borramos las posiciones duplicadas
+
+function DeleteDuplicates (fusion) {
+    let empty = []
+    for (let i of fusion){
+        if (!empty.includes(i)){
+            empty.push(i)
+        }
+    }
+    return empty
+}
