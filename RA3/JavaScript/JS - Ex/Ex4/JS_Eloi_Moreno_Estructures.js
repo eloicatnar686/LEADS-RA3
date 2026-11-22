@@ -68,3 +68,19 @@ console.log("                         4                          ")
 console.log("####################################################")
 let fusion3 = new Set([1,2,3,3,3,4,5,5,6]) // Repeated 3,5
 console.log(fusion3)
+
+
+// 5.- Codifica la funció map d’una Array perquè en creï una nova amb el valor cúbic de cada número.
+// Exemple: [1, 3, 6] => [1, 27, 216]
+
+console.log("####################################################")
+console.log("                         5                          ")
+console.log("####################################################")
+
+let map1 = new Map()
+let array5 = [1,3,6]
+let array5_1 = array5.map(item => { // Recorre todas las pos de la array, devuelve el cubo de cada item de la array en una nueva array delacarada en el let
+    return item * item * item
+})
+console.log(array5)
+console.log(array5_1)
