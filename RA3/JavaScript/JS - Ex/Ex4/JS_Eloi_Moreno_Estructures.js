@@ -187,14 +187,36 @@ console.log("Titol: " + peli2.titol)
 console.log("Desc: " + peli2.desc)
 console.log("Any: " + peli2.any)
 
-let peli3 = {"Titol": "Interestellar", "Desc":"Pelicula de SCFI espacial", "any": 2014}
-let peli4 = {"Titol": "Regreso al futuro", "Desc":"Pelicula de SCFI temporal", "any": 1985}
+let peli3 = {"titol": "Interestellar", "desc":"Pelicula de SCFI espacial", "any": 2014}
+let peli4 = {"titol": "Regreso al futuro", "desc":"Pelicula de SCFI temporal", "any": 1985}
 
 console.log("//// PELI 3 ////")
-console.log("Titol: " + peli3.Titol)
-console.log("Desc: " + peli3.Desc)
+console.log("Titol: " + peli3.titol)
+console.log("Desc: " + peli3.desc)
 console.log("Any: " + peli3.any)
 console.log("//// PELI 4 ////")
-console.log("Titol: " + peli4.Titol)
-console.log("Desc: " + peli4.Desc)
+console.log("Titol: " + peli4.titol)
+console.log("Desc: " + peli4.desc)
 console.log("Any: " + peli4.any)
+
+
+
+console.log("####################################################")
+console.log("                        10                          ")
+console.log("####################################################")
+
+// 10.- Crea una Cua d’Objectes amb dades de les 2 pel·lícules.
+// Itera la cua per mostrar per pantalla la pel·lícula més antiga.
+
+let cua = [peli1, peli2, peli3, peli4]
+let mes_antiga = null
+
+while (cua.length > 0) {
+    const p = cua.shift()
+    if (mes_antiga === null || p.any < mes_antiga.any) { // ant === null, first value
+        mes_antiga = p
+    }
+}
+
+console.log("Peli mes antiga: " + mes_antiga.titol + " (" + mes_antiga.any + ")")
+// Peli mes antiga: Regreso al futuro (1986)
