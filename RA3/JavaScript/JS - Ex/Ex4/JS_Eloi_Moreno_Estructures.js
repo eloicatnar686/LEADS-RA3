@@ -118,7 +118,7 @@ function MoreA (pepe){
 // 7.- Crea una estructura Map i insereix 3 claus – valor. Les 3 claus han de ser de tipus de dades diferents. Et deixa?
 
 console.log("####################################################")
-console.log("                         6                          ")
+console.log("                         7                          ")
 console.log("####################################################")
 
 let out = new Map()
@@ -131,7 +131,7 @@ console.log(out)
 // 8.- Donada una paraula, insereix cada caràcter dins d’una cua. Extreu ara de la cua els caràcters un a un per poder decidir si és un palíndrom o no.
 
 console.log("####################################################")
-console.log("                         6                          ")
+console.log("                         8                          ")
 console.log("####################################################")
 
 let paraula = "racecar"
@@ -143,7 +143,6 @@ for (const lletra of paraula){
 
 let i = paraula.length - 1
 let pali = true;
-
 while (i > 0){
     const lletra = par_d.shift() // Shift accedeix a la primera pos de una cua.
     if (lletra !== paraula[i]) { // "i" recórre desde el final al principi i compara amb "lletra", inversa
@@ -160,3 +159,42 @@ else{
     console.log("No es palindrom")
 }
 
+
+console.log("####################################################")
+console.log("                         9                          ")
+console.log("####################################################")
+
+// 9.- Crea un objecte Pel·lícula que contingui informació del títol, descripció i any d’estrena.
+// Fes-ne dos exemples: un amb class + new i l’altre amb declaració literal (JSON).
+// Mostra les dades dels dos objectes.
+
+class peli{
+    constructor(titol, desc, any) {
+        this.titol = titol
+        this.desc = desc
+        this.any = any
+    }
+} // Declaració class
+
+let peli1 = new peli("Top Gun", "Peli d'acció d'aviadors navals", 1986)
+let peli2 = new peli("Harry Potter", "Película de màgia", 2001)
+console.log("//// PELI 1 ////")
+console.log("Titol: " + peli1.titol)
+console.log("Desc: " + peli1.desc)
+console.log("Any: " + peli1.any)
+console.log("//// PELI 2 ////")
+console.log("Titol: " + peli2.titol)
+console.log("Desc: " + peli2.desc)
+console.log("Any: " + peli2.any)
+
+let peli3 = {"Titol": "Interestellar", "Desc":"Pelicula de SCFI espacial", "any": 2014}
+let peli4 = {"Titol": "Regreso al futuro", "Desc":"Pelicula de SCFI temporal", "any": 1985}
+
+console.log("//// PELI 3 ////")
+console.log("Titol: " + peli3.Titol)
+console.log("Desc: " + peli3.Desc)
+console.log("Any: " + peli3.any)
+console.log("//// PELI 4 ////")
+console.log("Titol: " + peli4.Titol)
+console.log("Desc: " + peli4.Desc)
+console.log("Any: " + peli4.any)
