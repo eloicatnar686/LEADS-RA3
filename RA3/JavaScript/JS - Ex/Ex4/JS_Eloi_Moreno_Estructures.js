@@ -114,3 +114,17 @@ function MoreA (pepe){
     }
     return str_plusa
 }
+
+// 7.- Crea una estructura Map i insereix 3 claus – valor. Les 3 claus han de ser de tipus de dades diferents. Et deixa?
+
+console.log("####################################################")
+console.log("                         6                          ")
+console.log("####################################################")
+
+let out = new Map()
+out.set('1', 12)
+out.set('2', "123")
+out.set('3', true)
+
+console.log(out)
+
