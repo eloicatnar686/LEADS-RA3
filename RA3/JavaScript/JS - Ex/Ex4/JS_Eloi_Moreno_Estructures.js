@@ -128,3 +128,35 @@ out.set('3', true)
 
 console.log(out)
 
+// 8.- Donada una paraula, insereix cada caràcter dins d’una cua. Extreu ara de la cua els caràcters un a un per poder decidir si és un palíndrom o no.
+
+console.log("####################################################")
+console.log("                         6                          ")
+console.log("####################################################")
+
+let paraula = "racecar"
+let par_d = []
+// Emplenar array
+for (const lletra of paraula){
+    par_d.push(lletra)
+}
+
+let i = paraula.length - 1
+let pali = true;
+
+while (i > 0){
+    const lletra = par_d.shift() // Shift accedeix a la primera pos de una cua.
+    if (lletra !== paraula[i]) { // "i" recórre desde el final al principi i compara amb "lletra", inversa
+        pali = false // Si la lletra no coincideix amb la seva parella a la inversa, retorna fals
+        // Ex: "race": r (lletra) ?= e (i); false!; No palíndrom!
+    }
+    i--
+}
+
+if (pali === true){
+    console.log("Es palíndrom!")
+}
+else{
+    console.log("No es palindrom")
+}
+
