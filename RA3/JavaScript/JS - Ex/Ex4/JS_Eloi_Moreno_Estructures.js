@@ -169,15 +169,18 @@ console.log("####################################################")
 // Mostra les dades dels dos objectes.
 
 class peli{
-    constructor(titol, desc, any) {
+    constructor(titol, desc, any, actors) {
         this.titol = titol
         this.desc = desc
         this.any = any
+        this.actors = actors
+
     }
 } // Declaració class
 
-let peli1 = new peli("Top Gun", "Peli d'acció d'aviadors navals", 1986)
-let peli2 = new peli("Harry Potter", "Película de màgia", 2001)
+let peli1 = new peli("Top Gun", "Peli d'acció d'aviadors navals", 1986, ["Tom Cruise", "Val Kilmer", "Anthony Edwards"])
+let peli2 = new peli("Harry Potter", "Película de màgia", 2001, ["Danniel Radcliffe", "Emma Watson", "Rupert Grin"])
+
 console.log("//// PELI 1 ////")
 console.log("Titol: " + peli1.titol)
 console.log("Desc: " + peli1.desc)
@@ -187,8 +190,8 @@ console.log("Titol: " + peli2.titol)
 console.log("Desc: " + peli2.desc)
 console.log("Any: " + peli2.any)
 
-let peli3 = {"titol": "Interestellar", "desc":"Pelicula de SCFI espacial", "any": 2014}
-let peli4 = {"titol": "Regreso al futuro", "desc":"Pelicula de SCFI temporal", "any": 1985}
+let peli3 = {"titol": "Interestellar", "desc":"Pelicula de SCFI espacial", "any": 2014, "actors":["Matthew McConaughey", "Jessica Chastain", "Mackenzie Foy"]}
+let peli4 = {"titol": "Regreso al futuro", "desc":"Pelicula de SCFI temporal", "any": 1985, "actors": ["Michael J. Fox", "Christopher Lloyd", "Lea Thompson"]}
 
 console.log("//// PELI 3 ////")
 console.log("Titol: " + peli3.titol)
@@ -220,3 +223,5 @@ while (cua.length > 0) {
 
 console.log("Peli mes antiga: " + mes_antiga.titol + " (" + mes_antiga.any + ")")
 // Peli mes antiga: Regreso al futuro (1986)
+
+
