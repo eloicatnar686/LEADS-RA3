@@ -90,3 +90,27 @@ console.log("Métode 1: " + array5_1)
 
 const cubs = array5.map(array5 => array5**3)
 console.log("Métode 2: " + cubs)
+
+// 6.- A partir d’una array de strings, es creï una nova amb aquelles que tinguin més d’una lletra ‘a’
+console.log("####################################################")
+console.log("                         6                          ")
+console.log("####################################################")
+
+let str_aaa = ["Hola", "hola", "holaaaa", "holaa", "holacaracolaaaa"]
+let str_plusa = []
+console.log(MoreA(str_aaa))
+
+function MoreA (pepe){
+    for (const str of pepe){
+        let a_counter = 0;
+        for (const letra of str){
+            if (letra === "a"){
+                a_counter++
+            }
+        }
+        if (a_counter > 1){
+            str_plusa.push(str)
+        }
+    }
+    return str_plusa
+}
