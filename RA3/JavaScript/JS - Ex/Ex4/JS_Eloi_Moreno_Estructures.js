@@ -44,10 +44,10 @@ console.log("                         3                          ")
 console.log("####################################################")
 // 3.- Fusiona dos arrays i esborren els valors duplicats (no utilitzis el Set).
 
-let fusion = [1,3,2,7,8] // Duplicates = 1,2,
-let fusion2 = [9,5,4,2,1]
+let fusion = [1,5,6,3] // Duplicates = 1,2,
+let fusion2 = [9,5,6,4]
 let total_fusion = [...fusion, ...fusion2]
-console.log(DeleteDuplicates(total_fusion))
+DeleteDuplicates(total_fusion)
 
 
 // Comparamos array 1 con array 2 para encontrar numeros duplicados, guardamos las posiciones duplicadas y borramos las posiciones duplicadas
@@ -59,8 +59,13 @@ function DeleteDuplicates (fusion) {
             empty.push(i)
         }
     }
+    console.log(empty)
     return empty
 }
+
+// 4.- Modifica l’exercici anterior per utilitzar una estructura que no permeti duplicats.
+
+let array_set = new Set([1,1,3,4,3,7,8,9])
 
 // 4.- Modifica l’exercici anterior per utilitzar una estructura que no permeti duplicats.
 console.log("####################################################")
@@ -77,10 +82,11 @@ console.log("####################################################")
 console.log("                         5                          ")
 console.log("####################################################")
 
-let map1 = new Map()
 let array5 = [1,3,6]
 let array5_1 = array5.map(item => { // Recorre todas las pos de la array, devuelve el cubo de cada item de la array en una nueva array delacarada en el let
     return item * item * item
 })
-console.log(array5)
-console.log(array5_1)
+console.log("Métode 1: " + array5_1)
+
+const cubs = array5.map(array5 => array5**3)
+console.log("Métode 2: " + cubs)
