@@ -224,4 +224,22 @@ while (cua.length > 0) {
 console.log("Peli mes antiga: " + mes_antiga.titol + " (" + mes_antiga.any + ")")
 // Peli mes antiga: Regreso al futuro (1986)
 
+console.log("####################################################")
+console.log("                        11                          ")
+console.log("####################################################")
+
+// 11.- Modifica l’exercici anterior per afegir un array d’actors a cada pel·lícula i que es mostrin tots els actors de totes les pel·lícules.
+
+let cua11 = [peli1, peli2, peli3, peli4]
+let mes_antiga11 = null
+
+while (cua11.length > 0) {
+    const p = cua11.shift()
+
+    console.log("//// " + p.titol + " (" + p.any + ") ////")
+    for (const actor of p.actors) {
+        console.log(" - " + actor)
+    }
+}
+
 
