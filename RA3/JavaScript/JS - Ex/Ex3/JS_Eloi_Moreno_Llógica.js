@@ -188,16 +188,28 @@ console.log("###################################################")
 // * * * * *
 
 function arboldenavidad() {
-    let num = "";
+    //let num = "";
 
-    for (let i = 1; i < 6; i++) {
+    /*for (let i = 1; i < 6; i++) {
         if (i === 1) {
             num = "*";
         } else {
             num = num + " *";
         }
         console.log(num);
+    } */
+
+    var x,y,chr = ''
+    for (linia = 1; linia < 6; linia++){
+        for (estrella = 0; estrella < linia; estrella++){
+            chr = chr + ("* ")
+        }
+        console.log(chr)
+        chr = ''
+
     }
+
+
 }
 
 arboldenavidad()
